@@ -25,3 +25,5 @@ addons:
   version: "v1.31.0-eksbuild.1"
   attachPolicyARNs:
   - arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy
+- name: coredns
+  version: latest 

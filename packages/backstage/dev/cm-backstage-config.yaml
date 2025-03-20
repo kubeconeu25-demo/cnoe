@@ -47,10 +47,10 @@ data:
         - host: github.com
           apps:
             - $include: github-integration.yaml
-    #    - host: github.com
+        - host: github.com
     #      # This is a Personal Access Token or PAT from GitHub. You can find out how to generate this token, and more information
     #      # about setting up the GitHub integration here: https://backstage.io/docs/getting-started/configuration#setting-up-a-github-integration
-    #      token: ${GITHUB_TOKEN}
+          token: ${GITHUB_TOKEN}
         ### Example for how to add your GitHub Enterprise instance using the API:
         # - host: ghe.example.net
         #   apiBaseUrl: https://ghe.example.net/api/v3
@@ -107,7 +107,9 @@ data:
       locations:
         # Examples from a public GitHub repository.
         - type: url
-          target: https://github.com/awslabs/backstage-templates-on-eks/blob/main/catalog-info.yaml
+          target: https://github.com/kubeconeu25-demo/backstage-templates-on-eks/blob/main/catalog-info.yaml
+          rules:
+            - allow: [User, Group]
         ## Uncomment these lines to add an example org
         # - type: url
         #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml

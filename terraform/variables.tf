@@ -1,6 +1,6 @@
 variable "repo_url" {
   description = "Repository URL where application definitions are stored"
-  default     = "https://github.com/manabuOrg/ref-impl"
+  default     = "https://github.com/kubeconeu25-demo/cnoe"
   type        = string
 }
 
@@ -21,7 +21,7 @@ variable "region" {
 
 variable "cluster_name" {
   description = "EKS Cluster name"
-  default     = "cnoe-ref-impl"
+  default     = "cnoe"
   type        = string
 }
 

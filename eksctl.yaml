@@ -1,7 +1,7 @@
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:
-  name: cnoe-ref-impl
+  name: cnoe
   region: eu-north-1
   version: "1.31"
 managedNodeGroups:

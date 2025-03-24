@@ -20,7 +20,7 @@ resource "aws_iam_policy" "external-secrets" {
           "secretsmanager:ListSecretVersionIds"
         ],
         "Resource": [
-          "arn:aws:secretsmanager:${var.region}:${data.aws_caller_identity.current.account_id}:secret:cnoe/keycloak/*"
+          "arn:aws:secretsmanager:${var.region}:${data.aws_caller_identity.current.account_id}:secret:cnoe/*"
         ]
       }
     ]
@@ -88,7 +88,7 @@ resource "aws_secretsmanager_secret" "keycloak_config" {
   count = local.secret_count
 
   description = "for use with cnoe keycloak installation"
-  name = "cnoe/keycloak"
+  name = "cnoe"
   recovery_window_in_days = 0
 }
 
